@@ -20,7 +20,7 @@ class CompanyViewset(viewsets.ModelViewSet):
             return Response(emp_serialize.data)
         except Exception as e:
             return Response({
-                "Message":"Company Not found"
+                "Message":"Company Not found Error"
             })
 
 class EmployeViewset(viewsets.ModelViewSet):
